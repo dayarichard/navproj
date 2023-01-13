@@ -321,15 +321,18 @@ export default function EnhancedTable2() {
                       key={row.name}
                       selected={isItemSelected}
                     >
-                      <TableCell padding="checkbox">
+                      <TableCell className='row-counter' padding="checkbox">
                         <Checkbox
                           color="primary"
                           checked={isItemSelected}
                           inputProps={{
                             'aria-labelledby': labelId,
                           }}
+                          
                         />
+                        {<h1 ></h1>}
                       </TableCell>
+                      
                       <TableCell
                         component="th"
                         id={labelId}

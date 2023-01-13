@@ -3,7 +3,7 @@ import "../customer_forms/customer.scss";
 import ShapeSvg from "../../assets/images/Combined-Shape.svg";
 import whiteSvg from "../../assets/images/white.svg";
 import LogoBlackSvg from "../../assets/images/Logo-Black.svg";
-import apiRes from "../../assets/temporary/CustomerForm.json";
+import apiRes from "../tempData.Json";
 
 
 
@@ -415,7 +415,6 @@ function CustomerForm() {
 
   return (
     <div className="container-section">
-      <DashboardLeftSection formTitle={'CUSTOMER SATISFACTION SURVEY - 2022'} />
       <div className="rightSection">
         <form
           className="formoid-metro-red"

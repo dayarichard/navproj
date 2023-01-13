@@ -75,3 +75,13 @@ tr{
     align-items: center;
     justify-content: center;
 } 
+
+tbody {
+  counter-reset: "row-counter";
+}
+tr {
+  counter-increment: "row-counter";
+}
+td.row-number:before {
+  content: counter("row-counter");
+}

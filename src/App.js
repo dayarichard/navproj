@@ -22,6 +22,8 @@ import { SortableHandle } from 'react-sortable-hoc';
 import { SortableList } from './components/ReactSortableHoc';
 import Fapp from './components/ReactSortableHocComp';
 import { ImageUpload } from './components/imageUpload.tsx';
+import MainTransIndex from './components/TransferList/Main';
+import StepperWrapper from './stepper';
 
 function App() {
   const {t} = useTransition()
@@ -39,6 +41,10 @@ function App() {
         <Route path='/emoji' element = {<Example /> } />
         <Route path = '/draghoc' element={<SortableList />} />
         <Route path = '/sortableHoc' element={<Fapp />} />
+        <Route path = '/transferlist' element={<MainTransIndex />} />
+        <Route path = '/stepper' element={<StepperWrapper />} />
+
+
         <Route path='/1' element={<AlertDismissibleExample /> } />
       </Routes>
       
